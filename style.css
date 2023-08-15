@@ -686,19 +686,19 @@ footer .copyright {
         display: none;
     }
     /* LANDING SECTION */
-    section.landing {
+    /* section.CEO {
         margin-top: 4rem;
         padding-bottom: 7rem;
         max-width: 100vw;
         overflow-x: hidden;
     }
-    section.landing .container {
+    section.CEO .container {
         grid-template-columns: 1fr;
         grid-template-rows: 20% 50%;
         text-align: center;
         row-gap: 6rem;
 
-    }
+    } */
     section.CEO .container .socials {
         display: none;
     }
@@ -831,12 +831,17 @@ footer .copyright {
     section.google-form {
         grid-template-columns: 1fr;
     }
+    .dropdown-content {
+       
+        margin-top: 8rem;
+        
+    }
     
 }
 
-section.google-form {
+/* section.google-form {
     background: url(./asset/image/Background.jpg) no-repeat center center/cover;
     display: grid;
     grid-template-columns: 1fr 1fr;
     opacity: 0.8;
-}
+} */
