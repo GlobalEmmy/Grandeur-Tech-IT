@@ -1,0 +1,842 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+/* CSS ROOT VARIABLE */
+:root {
+    --color-white: #fff;
+    /* --color-light: #f4f4f4; */
+    --color-light: #C5DFF8;
+    --color-dark: #525252;
+    --color-black: #141415;
+    --color-primary: #4A55A2;
+    --color-primary-light: #7895CB;
+    --color-success: #29f5a6;
+    --color-warning: #ffce31;
+
+    --transition: all 0.5s ease;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--color-primary-light);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+}
+::-webkit-scrollbar-button {
+    background: var(--color-primary);
+}
+
+
+html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+body {
+    background: var(--color-white);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-dark);
+    max-width: 100vw;
+}
+h1, h2, h3, h4, h5 {
+    color: var(--color-black);
+    line-height: 1.2;
+}
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 2.6rem;
+
+}
+h3 {
+    font-size: 1.6rem;
+
+}
+h4 {
+    font-size: 1.2rem;
+
+}
+h5 {
+    font-size: 0.86rem;
+
+}
+p {
+    line-height: 1.8;
+}
+.container {
+    width: 100%;
+    margin:0 auto;
+}
+section {
+    padding: 5rem 0 7rem;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+section h1, p {
+    text-align: center;
+    display: block;
+    margin-bottom: 5rem;
+}
+img { 
+    width: 100%;
+}
+.btn {
+    padding: 1.4rem 3.4rem;
+    font-size: 1.1rem;
+    color: var(--color-black);
+    background: var(--color-white);
+    display: inline-block;
+    margin: 2rem 0;
+    transition: var(--transition);
+}
+.btn:hover {
+    box-shadow: 0 2rem 2rem var(--color-primary-light);
+}
+.btn-primary {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* NAVBAR STYLES */
+nav {
+    /* background: var(--color-white); */
+    background-image: url(./asset/image/Background1.webp);
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    border-bottom: 1px solid var(--color-light);
+    
+}
+
+nav.show-box-shadow {
+    box-shadow: 0 0.6rem 1rem var(--color-primary-light);
+    border: none;
+}
+nav .container { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+nav button {
+    display: none;
+}
+nav img {
+    width: 20rem;
+}
+nav .container ul {
+    display: flex;
+    height: 100%;
+    gap: 3rem;
+}
+nav .container ul li {
+    /* gap: 6rem; */
+}
+nav .container ul li a {
+    height: 100%;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-black);
+    position: relative;
+    transition: var(--transition);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+nav .container ul li a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+nav .container ul li a.active {
+    /* background: var(--color-primary); */
+    /* color: var(--color-white); */
+}
+
+section#carousel-container {
+    margin-top: 50px;
+}
+
+
+/* <!-- ===========LANDING SECTION=========== --> */
+
+section.CEO {
+    background-image: url(./asset/image/CEO-background.jpg);
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 5rem;
+    padding-bottom: 5rem;
+}
+section.CEO .container {
+    display: flex;
+    justify-content: space-between;
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-template-columns: 5rem auto 26rem; */
+    /* padding: 1rem; */
+}
+
+section.CEO .container .CEO__info {
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    /* border: 1px solid black; */
+  
+   
+}
+section.CEO .socials {
+    display: flex;
+    gap: 1.6rem;
+} 
+section.CEO .socials a {
+    font-size: 1.1rem;
+    background: var(--color-light);
+    color: var(--color-dark);
+    padding: 0.3rem;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+
+}
+section.CEO .socials a:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+section.CEO .info h1 {
+    margin: 1rem;
+   
+}
+section.CEO .info p {
+    width: 35rem;
+    
+}
+section.CEO .profile-area {
+    width: 40rem;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+section.CEO .profile-area .outer-circle {
+    width: 37rem;
+    height: 37rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+    position: relative;
+    animation: move 30s linear infinite;
+}
+
+@keyframes move {
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+section.CEO .profile-area .outer-circle span {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    background: var(--color-white);
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1rem var(--color-primary);
+
+}
+section.CEO .profile-area .outer-circle span:nth-child(1) {
+    left: calc(50% - 2rem);
+    top: -2rem;
+}
+section.CEO .profile-area .outer-circle span:nth-child(2) {
+    right: -2rem;
+    top: calc(50% - 2rem);
+}
+section.CEO .profile-area .outer-circle span:nth-child(3) {
+   left: -2rem;
+   top: calc(50% - 2rem);
+}
+section.CEO .profile-area .outer-circle span:nth-child(4) {
+    bottom: -2rem;
+    left: calc(50% - 2rem);
+}
+section.CEO .profile-area .inner-circle {
+    position: absolute;
+    width: 32rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* =====================ABOUT SECTION========================== */
+section.about {
+    background: var(--color-white);
+}
+section.about .container {
+    display: grid;
+    grid-template-columns: 26rem auto;
+    gap: 17rem;
+    /* justify-content: center;
+    align-items: center; */
+}
+section.about .container img {
+    width: 20rem;
+}
+section.about p {
+    margin-bottom: 1rem;
+}
+section.about ul li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+}
+section.about ul li ion-icon {
+    color: var(--color-primary);
+    margin-top: 2px;
+}
+section.about .container .read-more-content {
+    display: none;
+}
+section.about .container .read-more{
+    display: block;
+    margin: 1rem 0 2rem;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+section.about .container .read-less {
+    display: none;
+    margin: 1rem 0 2rem;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+section.about .container .read-more:hover {
+    text-decoration: underline
+}
+
+section.teams .team__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1.6rem;
+    margin-top: 3rem;
+}
+section.teams .team__list .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+section.teams .team__list .team .Jerry {
+    aspect-ratio: 1/1;
+}
+/* =====================DIRECTION SECTION========================== */
+section.google-map {
+    background:var(--color-primary-light);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =====================SERVICES SECTION========================== */
+section.services {
+    background: var(--color-light);
+   
+}
+
+section.services .container {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 2rem;
+    animation: mymove 50s;
+}
+@keyframes mynove {
+    to {
+        transform: translateX(50px);
+        transition: var(--transition);
+    }
+}
+section.services .container .service {
+    background: var(--color-white);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    cursor: default;
+    transition: var(--transition);
+}
+section.services .container .service:hover {
+    box-shadow: 0 3rem 3rem var(--color-primary-light);
+}
+section.services .container .service span {
+    background: var(--color-primary);
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 4rem;
+}
+section.services .container .service:nth-child(2) span {
+    background: var(--color-warning);
+}
+section.services .container .service:nth-child(3) span {
+    background: var(--color-success);
+}
+
+
+/* =====================TESTIMONIAL SECTION========================== */
+section.testimonials {
+    background: var(--color-light);
+}
+section.testimonials .container {
+    width: 44rem;
+}
+section.testimonials .carousel {
+    display: flex;
+    align-items: center;
+    /* gap: 1rem; */
+    /* flex-direction: column; */
+}
+section.testimonials .testimonial {
+    background: var(--color-white);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+section.testimonials .testimonial .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+section.testimonials .testimonial .head .profile-area {
+    display: flex;
+    gap: 1rem;
+}
+section.testimonials .testimonial .head .profile-area .avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+section.testimonials .testimonial .head .stars {
+    color: var(--color-primary);
+}
+section.testimonials .testimonial .head .stars ion-icon {
+    font-size: 1.2rem;
+}
+/* =====================CONTACT SECTION========================== */
+section.contact {
+    background: url(./asset/image/Background.jpg) no-repeat center center/cover;
+    padding: 0;
+    max-width: 100vw;
+}
+section.contact .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10rem 0 7rem;
+}
+section.contact .container {
+    width: 40%;
+}
+section.contact .container h1 {
+    margin: 0;
+    color: var(--color-white);
+}
+section.contact .container p {
+    text-align: center;
+    color: var(--color-white);
+    opacity: 0.8;
+    margin-top: 0.5rem;
+}
+
+section.contact form {
+    margin-top: 3rem;
+}
+section.contact form input, section.contact form textarea {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 1.6rem;
+    border: 1px solid var(--color-white);
+    background: transparent;
+    transition: var(--transition);
+    /* color: var(--color-white); */
+}
+section.contact form input:focus, section.contact form textarea:focus {
+    background: var(--color-white);
+    color: var(--color-black);
+    /* box-shadow: 0 3rem 3rem var(--color-white); */
+}
+
+section.contact form input::placeholder, section.contact form textarea::placeholder {
+    color: var(--color-white);
+}
+section.contact form .btn {
+    width: 14rem;
+    border: none;
+    background: var(--color-white);
+    color: var(--color-black);
+    margin: 2rem auto 0;
+}
+section.contact form .btn:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+    cursor: pointer;
+}
+/* =====================FOOTER SECTION========================== */
+footer {
+    padding: 5rem;
+}
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .container ul {
+    display: flex;
+    gap: 3rem;
+}
+footer .container ul a {
+    color: var(--color-dark);
+    transition: var(--transition);
+    text-decoration: none;
+}
+footer .container ul a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+footer .container .socials {
+ display: flex;
+ gap: 2rem;
+}
+
+footer .container .socials ion-icon {
+    font-size: 1.5rem;
+}
+footer .container .socials a {
+    /* background: var(--color-light); */
+    color: var(--color-primary);
+    padding: 0.3rem;
+    border-radius: 50%;
+    transition: var(--transition);
+    
+}
+
+footer .container .socials a:hover {
+    opacity: 0.6;
+}
+footer .container img {
+    width: 15rem;
+}
+footer .copyright {
+    /* background: var(--color-primary); */
+    color: var(--color-primary);
+    text-align: center;
+    margin-top: 5rem;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+}
+  
+/* Nav items Drop down */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    margin-top: 5rem;
+    /* text-align: center; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+/* MEDIA QUERIES (PHONE) */
+@media  screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    h5 {
+        font-size: 0.68rem;
+    }
+    section {
+        padding: 1rem 0 7rem;
+        
+    }
+    .container {
+        width: 94%;
+    }
+    /* NAV BAR */
+
+    nav img {
+        width: 20rem;
+    }
+    nav .container {
+        width: 100%;
+    }
+    nav .container ul {
+        position: fixed;
+        top: 0;
+        flex-direction: column;
+        z-index: 3;
+        width: 16rem;
+        height: 100vh;
+        background: var(--color-white);
+        display: none;
+    }
+    nav ul li {
+        height: 4rem;
+        width: 100%;
+    }
+    nav .container ul li a {
+        width: 100%;
+        justify-content: start;
+        padding-left: 2rem ;
+    }
+    nav .container ul li a:hover {
+        padding-left: 3rem;
+    }
+    nav button {
+        display: inline-block;
+        cursor: pointer;
+        background: transparent;
+        color: var(--color-black);
+        margin-right: 1rem;
+    }
+    nav button#close-btn {
+        display: none;
+    }
+    /* LANDING SECTION */
+    section.landing {
+        margin-top: 4rem;
+        padding-bottom: 7rem;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+    section.landing .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 50%;
+        text-align: center;
+        row-gap: 6rem;
+
+    }
+    section.CEO .container .socials {
+        display: none;
+    }
+    section.CEO .container .info {
+        width: 90%;
+        margin: 0 auto;
+    }
+    section.CEO .container .info h1 {
+        text-align: center;
+    }
+    section.CEO .container .info p {
+        margin: 0 auto;
+        width: 92%;
+    }
+    section.CEO .container .profile-area {
+        grid-row: 1;
+        width: 94%;
+        margin: 0 auto;
+    }
+    section.CEO .container .outer-circle {
+        width: 16rem;
+        height: 16rem;
+    }
+    section.CEO .container .inner-circle {
+        width: 10rem;
+        height: 10rem;
+    }
+    section.CEO .container .outer-circle span {
+        width: 3rem;
+        height: 3rem;
+    }
+    section.CEO .profile-area .outer-circle span:nth-child(1) {
+        left: calc(50% - 1.5rem);
+        top: -1.5rem;
+    }
+    section.CEO .profile-area .outer-circle span:nth-child(2) {
+        right: -1.5rem;
+        top: calc(50% - 1.5rem);
+    }
+    section.CEO .profile-area .outer-circle span:nth-child(3) {
+       left: -1.5rem;
+       top: calc(50% - 1.5rem);
+    }
+    section.CEO .profile-area .outer-circle span:nth-child(4) {
+        bottom: -1.5rem;
+        left: calc(50% - 1.5rem);
+    }
+
+    /* ABOUT SECTION */
+    section.about .container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    section.teams .team__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1.6rem;
+    }
+
+    /* SKILL SECTION */
+    section.skills .container {
+        width: 94%;
+
+    }
+
+    /* SERVICE SECTION */
+    section.services .container {
+        grid-template-columns: 1fr;
+    }
+    section.services .container .service {
+        flex-direction: column;
+    }
+
+    /* TEAM-CEO SECTION  */
+    section.CEO .container {
+        margin-top: 2rem;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    } 
+    section.CEO .profile-area {
+        width: 15rem;
+        height: 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section.CEO .profile-area .outer-circle {
+        width: 15rem;
+        height: 15rem;
+        border: 1px solid var(--color-primary);
+        border-radius: 50%;
+        position: relative;
+        animation: move 30s linear infinite;
+    }
+   
+    section.recent-work .container h1 {
+        width: 94vw;
+        margin: 1.4rem 0 1rem;
+    }
+    /* TESTIMONIAL SECTION */
+    section.testimonials .container {
+        grid-template-columns: 1fr;
+        width: 94vw;
+    }
+    section.testimonials .container .testimonial .head .stars ion-icon {
+        font-size: 0.8rem;
+    }
+    /* CONTACT SECTION */
+    section.contact .container {
+        width: 94vw;
+    }
+    section.contact .container p {
+        width: 80vw;
+        margin: 0.5rem auto 0;
+    }
+    /* FOOTER SECTION */
+    footer .container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    footer .container ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.4rem;
+    }
+    section.google-form {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+section.google-form {
+    background: url(./asset/image/Background.jpg) no-repeat center center/cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    opacity: 0.8;
+}
