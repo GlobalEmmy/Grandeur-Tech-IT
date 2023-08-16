@@ -526,6 +526,113 @@ section.contact form .btn:hover {
     color: var(--color-white);
     cursor: pointer;
 }
+/* =====================SKILLS SECTION========================== */
+section.skills .container {
+    width: 50%;
+}
+section.skills .container .skill {
+    margin-bottom: 1rem;
+}
+section.skills .skill .head {
+    background: var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-white);
+    padding: 1.6rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+section.skills .skill .head span {
+    font-size: 3rem;
+}
+section.skills .skill .head h4 {
+    color: var(--color-white);
+}
+section.skills .skill .head .left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+section.skills .skill .item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    padding: 1.6rem;
+    background: var(--color-light);
+    margin-bottom: 0.3rem;
+    transition: var(--transition);
+}
+section.skills .skill .item:hover {
+    background: var(--color-white);
+}
+section.skills .skill .progress-area {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+section.skills .skill .progress-bar {
+    height: 1rem;
+    width: 100%;
+    background: var(--color-primary-light);
+}
+section.skills .item .progress-bar .progress {
+    height: 100%;
+    width: 95%;
+    background: var(--color-primary);
+}
+section.skills .abaqus .progress-bar .progress {
+    width: 75%;
+}
+section.skills .autocad .progress-bar .progress {
+    width: 80%;
+}
+section.skills .mathcad .progress-bar .progress {
+    width: 70%;
+}
+section.skills .html .progress-bar .progress {
+    width: 95%;
+}
+section.skills .css .progress-bar .progress {
+    width: 92%;
+}
+section.skills .javascript .progress-bar .progress {
+    width: 92%;
+}
+section.skills .react .progress-bar .progress {
+    width: 75%;
+}
+section.skills .bootstrap .progress-bar .progress {
+    width: 80%;
+}
+section.skills .mysql .progress-bar .progress {
+    width: 73%;
+}
+section.skills .node .progress-bar .progress {
+    width: 88%;
+}
+section.skills .express .progress-bar .progress {
+    width: 80%;
+}
+section.skills .mongodb .progress-bar .progress {
+    width: 75%;
+}
+section.skills .container .skill .items {
+    display: none;
+}
+section.skills .dropup {
+    display: none;
+}
+/* For JavaScript */
+section.skills .skill .items.show-items {
+    display: block;
+}
+
+
+
+
 /* =====================FOOTER SECTION========================== */
 footer {
     padding: 5rem;
