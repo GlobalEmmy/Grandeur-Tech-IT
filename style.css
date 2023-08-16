@@ -186,9 +186,6 @@ section.CEO {
 section.CEO .container {
     display: flex;
     justify-content: space-between;
-    /* grid-template-columns: repeat(2, 1fr); */
-    /* grid-template-columns: 5rem auto 26rem; */
-    /* padding: 1rem; */
 }
 
 section.CEO .container .CEO__info {
@@ -198,14 +195,15 @@ section.CEO .container .CEO__info {
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    /* border: 1px solid black; */
   
    
 }
 section.CEO .socials {
     display: flex;
     gap: 1.6rem;
+  
 } 
+
 section.CEO .socials a {
     font-size: 1.1rem;
     background: var(--color-light);
@@ -352,7 +350,15 @@ section.teams .team__list .team {
     justify-content: center;
     gap: 1rem;
 }
+.team__list .team .socials a ion-icon {
+    font-size: 1.5rem;
+    margin:  0 1rem;
+}
 section.teams .team__list .team .Jerry {
+    aspect-ratio: 1/1;
+}
+section.teams .team__list .team .Emmanuel {
+    width: 55rem;
     aspect-ratio: 1/1;
 }
 /* =====================DIRECTION SECTION========================== */
@@ -661,10 +667,9 @@ footer .container .socials {
 }
 
 footer .container .socials ion-icon {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 footer .container .socials a {
-    /* background: var(--color-light); */
     color: var(--color-primary);
     padding: 0.3rem;
     border-radius: 50%;
@@ -684,7 +689,11 @@ footer .copyright {
     text-align: center;
     margin-top: 5rem;
     padding: 2rem 0;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
+}
+footer .address {
+    font-size: 2rem;
+    color: var(--color-primary);
 }
   
 /* Nav items Drop down */
@@ -807,8 +816,12 @@ footer .copyright {
 
     } */
     section.CEO .container .socials {
-        display: none;
+        margin: 1rem;
     }
+    section.CEO .socials a ion-icon {
+        /* font-size: 20rem; */
+      
+      }
     section.CEO .container .info {
         width: 90%;
         margin: 0 auto;
@@ -904,6 +917,13 @@ footer .copyright {
         position: relative;
         animation: move 30s linear infinite;
     }
+    section.teams .team__list .team .Emmanuel {
+        width: 22rem;
+    }
+    .team__list .team .socials a ion-icon {
+        font-size: 1.5rem;
+        margin: 0 1rem;
+    }
    
     section.recent-work .container h1 {
         width: 94vw;
@@ -942,6 +962,25 @@ footer .copyright {
        
         margin-top: 8rem;
         
+    }
+    footer .container .socials ion-icon {
+        font-size: 0.9rem;
+    }
+   
+    footer .container img {
+        width: 15rem;
+    }
+    footer .copyright {
+        /* background: var(--color-primary); */
+        color: var(--color-primary);
+        text-align: center;
+        margin-top: 5rem;
+        padding: 2rem 0;
+        font-size: 0.7rem;
+    }
+    footer .address {
+        font-size: 0.9rem;
+        color: var(--color-primary);
     }
     
 }
