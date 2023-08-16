@@ -168,10 +168,15 @@ nav .container ul li a.active {
     /* color: var(--color-white); */
 }
 
-section#carousel-container {
-    margin-top: 50px;
+section.blog-carousel .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    width: 100%;
 }
-
+section.blog-carousel .container .carousel-container {
+  
+}
 
 /* <!-- ===========LANDING SECTION=========== --> */
 
@@ -815,6 +820,14 @@ footer .address {
         row-gap: 6rem;
 
     } */
+    section.blog-carousel .container {
+        display: grid;
+        grid-template-columns: 1fr
+      
+    }
+    section.blog-carousel .container .blog {
+        height: 30rem;
+    }
     section.CEO .container .socials {
         margin: 1rem;
     }
