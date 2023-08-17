@@ -362,10 +362,10 @@ section.teams .team__list .team {
 section.teams .team__list .team .Jerry {
     aspect-ratio: 1/1;
 }
-section.teams .team__list .team .Emmanuel {
+/* section.teams .team__list .team .Emmanuel {
     width: 55rem;
     aspect-ratio: 1/1;
-}
+} */
 /* =====================DIRECTION SECTION========================== */
 section.google-map {
     background:var(--color-primary-light);
