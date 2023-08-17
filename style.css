@@ -244,8 +244,8 @@ section.CEO .profile-area {
     /* border: 1px solid black; */
 }
 section.CEO .profile-area .outer-circle {
-    width: 37rem;
-    height: 37rem;
+    width: 30rem;
+    height: 30rem;
     border: 1px solid var(--color-primary);
     border-radius: 50%;
     position: relative;
@@ -260,8 +260,8 @@ section.CEO .profile-area .outer-circle {
 }
 section.CEO .profile-area .outer-circle span {
     display: block;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     position: absolute;
     background: var(--color-white);
@@ -290,7 +290,7 @@ section.CEO .profile-area .outer-circle span:nth-child(4) {
 }
 section.CEO .profile-area .inner-circle {
     position: absolute;
-    width: 32rem;
+    width: 26rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
@@ -298,18 +298,17 @@ section.CEO .profile-area .inner-circle {
 
 /* =====================ABOUT SECTION========================== */
 section.about {
-    background: var(--color-white);
+    background-image: url(./asset/image/tech-background.webp);
 }
 section.about .container {
     display: grid;
     grid-template-columns: 26rem auto;
     gap: 17rem;
-    /* justify-content: center;
-    align-items: center; */
 }
 section.about .container img {
-    width: 20rem;
+  height: 100%;
 }
+
 section.about p {
     margin-bottom: 1rem;
 }
@@ -340,6 +339,7 @@ section.about .container .read-less {
 section.about .container .read-more:hover {
     text-decoration: underline
 }
+
 /* TEAM SECTION */
 
 section.teams .team__list {
@@ -358,15 +358,14 @@ section.teams .team__list .team {
 }
 .team__list .team .socials a ion-icon {
     font-size: 1.5rem;
-    margin:  0 1rem;
+    margin:  0 0.4rem;
 }
 section.teams .team__list .team .Jerry {
     aspect-ratio: 1/1;
 }
-/* section.teams .team__list .team .Emmanuel {
-    width: 55rem;
-    aspect-ratio: 1/1;
-} */
+section.teams .team__list  {
+    text-align: center;
+}
 /* =====================DIRECTION SECTION========================== */
 section.google-map {
     background:var(--color-primary-light);
@@ -833,10 +832,6 @@ footer .address {
     section.CEO .container .socials {
         margin: 1rem;
     }
-    section.CEO .socials a ion-icon {
-        /* font-size: 20rem; */
-      
-      }
     section.CEO .container .info {
         width: 90%;
         margin: 0 auto;
@@ -862,8 +857,8 @@ footer .address {
         height: 10rem;
     }
     section.CEO .container .outer-circle span {
-        width: 3rem;
-        height: 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
     section.CEO .profile-area .outer-circle span:nth-child(1) {
         left: calc(50% - 1.5rem);
