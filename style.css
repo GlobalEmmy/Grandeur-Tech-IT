@@ -340,6 +340,7 @@ section.about .container .read-less {
 section.about .container .read-more:hover {
     text-decoration: underline
 }
+/* TEAM SECTION */
 
 section.teams .team__list {
     display: grid;
@@ -646,7 +647,7 @@ section.skills .skill .items.show-items {
 
 /* =====================FOOTER SECTION========================== */
 footer {
-    padding: 5rem;
+    /* padding: 0rem; */
 }
 footer .container {
     display: flex;
@@ -661,6 +662,7 @@ footer .container ul a {
     color: var(--color-dark);
     transition: var(--transition);
     text-decoration: none;
+    font-size: 1.5rem;
 }
 footer .container ul a:hover {
     color: var(--color-primary);
@@ -694,10 +696,10 @@ footer .copyright {
     text-align: center;
     margin-top: 5rem;
     padding: 2rem 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 footer .address {
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: var(--color-primary);
 }
   
