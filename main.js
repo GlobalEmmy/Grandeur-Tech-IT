@@ -26,7 +26,7 @@ let menuBtn = document.querySelector("#menu-btn");
 let closeBtn = document.querySelector("#close-btn");
 let menu = document.querySelector("nav .container ul");
 
-//Hide Menu
+//Show Menu
 
 menuBtn.addEventListener("click", () => {
   menu.style.display = "block";
