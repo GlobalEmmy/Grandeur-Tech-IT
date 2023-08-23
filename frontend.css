@@ -45,4 +45,10 @@ section.register li a:hover {
    
     }
 
+    nav .container li a{
+        text-decoration: none;
+        color: var(--color-primary);
+        font-size: 1.5rem;
+    }
+
 }
