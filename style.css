@@ -669,6 +669,7 @@ footer .container ul a {
 footer .container ul a:hover {
     color: var(--color-primary);
     text-decoration: underline;
+    transition: var(--transition);
 }
 footer .container .socials {
  display: flex;
