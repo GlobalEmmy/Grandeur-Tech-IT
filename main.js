@@ -53,13 +53,10 @@ skillItems.forEach(skill => {
   })
 })
 
-
 // Add box shadow on scroll
 window.addEventListener ("scroll", () => {
   document.querySelector("nav").classList.toggle("show-box-shadow",window.scrollY > 0)
 })
-
-
 
 // Nav Items Drop down
 var _hmt = _hmt || [];

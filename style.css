@@ -162,19 +162,12 @@ nav .container ul li a:hover {
     color: var(--color-primary);
     text-decoration: underline;
 }
-nav .container ul li a.active {
-    /* background: var(--color-primary); */
-    /* color: var(--color-white); */
-}
 
 section.blog-carousel .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
     width: 100%;
-}
-section.blog-carousel .container .carousel-container {
-  
 }
 
 /* <!-- ===========LANDING SECTION=========== --> */
@@ -200,7 +193,6 @@ section.CEO .container .CEO__info {
     align-items: center;
     padding: 2rem;
   
-   
 }
 section.CEO .socials {
     display: flex;
@@ -369,16 +361,6 @@ section.teams .team__list  {
 section.google-map {
     background:var(--color-primary-light);
 }
-
-
-
-
-
-
-
-
-
-
 
 /* =====================SERVICES SECTION========================== */
 section.services {
@@ -644,9 +626,6 @@ section.skills .skill .items.show-items {
     display: block;
 }
 
-
-
-
 /* =====================FOOTER SECTION========================== */
 footer {
     /* padding: 0rem; */
@@ -811,20 +790,7 @@ footer .address {
     nav button#close-btn {
         display: none;
     }
-    /* LANDING SECTION */
-    /* section.CEO {
-        margin-top: 4rem;
-        padding-bottom: 7rem;
-        max-width: 100vw;
-        overflow-x: hidden;
-    }
-    section.CEO .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 20% 50%;
-        text-align: center;
-        row-gap: 6rem;
 
-    } */
     section.blog-carousel .container {
         display: grid;
         grid-template-columns: 1fr
@@ -998,10 +964,3 @@ footer .address {
     }
     
 }
-
-/* section.google-form {
-    background: url(./asset/image/Background.jpg) no-repeat center center/cover;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    opacity: 0.8;
-} */
