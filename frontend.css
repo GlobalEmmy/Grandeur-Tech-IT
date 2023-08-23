@@ -1,5 +1,9 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+nav .container li a{
+   display: none;
+}
 section.register {
     background-image: url(./asset/image/Background.avif);
     display: grid;
@@ -46,6 +50,7 @@ section.register li a:hover {
     }
 
     nav .container li a{
+        display: block;
         text-decoration: none;
         color: var(--color-primary);
         font-size: 1.5rem;
