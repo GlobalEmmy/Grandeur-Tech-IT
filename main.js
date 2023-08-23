@@ -1,21 +1,5 @@
 
 const swiper = new Swiper('.swiper', {
-  // // Optional parameters
-  // direction: 'vertical',
-  // loop: true,
-
-  // // If we need pagination
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
-
-  // // Navigation arrows
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
-  // },
-
-  // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
 
@@ -60,24 +44,6 @@ navItems.forEach(item => {
   })
 })
 
-//Read more
-
-let readMoreBtn = document.querySelector("section.about .container .read-more");
-let readLessBtn = document.querySelector("section.about .container .read-less");
-let readMoreContent = document.querySelector("section.about .container .read-more-content")
-
-readMoreBtn.addEventListener("click", () => {
-  readMoreContent.style.display = "block"
-  readMoreBtn.style.display = "none"
-  readLessBtn.style.display = "block"
-})
-readLessBtn.addEventListener("click", () => {
-  readMoreContent.style.display = "none"
-  readMoreBtn.style.display = "block"
-  readLessBtn.style.display = "none"
-}) 
-
-
 //Skill items Toggle
 let skillItems = document.querySelectorAll("section.skills .skill");
 
@@ -103,6 +69,3 @@ hm.src = "//hm.baidu.com/hm.js?73c27e26f610eb3c9f3feb0c75b03925";
 var s = document.getElementsByTagName("script")[0];
 s.parentNode.insertBefore(hm, s);
 })();
-
-
-
