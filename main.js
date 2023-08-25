@@ -57,6 +57,10 @@ skillItems.forEach(skill => {
 window.addEventListener ("scroll", () => {
   document.querySelector("nav").classList.toggle("show-box-shadow",window.scrollY > 0)
 })
+window.addEventListener ("scroll", () => {
+  document.querySelector("section.company-info").classList.toggle("show-box-shadow",window.scrollY > 0)
+})
+
 
 // Nav Items Drop down
 var _hmt = _hmt || [];

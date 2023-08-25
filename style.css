@@ -119,6 +119,7 @@ nav {
     top: 0;
     z-index: 2;
     border-bottom: 1px solid var(--color-light);
+
     
 }
 
@@ -143,9 +144,7 @@ nav .container ul {
     height: 100%;
     gap: 3rem;
 }
-nav .container ul li {
-    /* gap: 6rem; */
-}
+
 nav .container ul li a {
     height: 100%;
     width: 7rem;
@@ -162,12 +161,96 @@ nav .container ul li a:hover {
     color: var(--color-primary);
     text-decoration: underline;
 }
+section.company-info {
+    background-image: url(./asset/image/Background1.webp);
+    height: 0.9rem;
+ 
+    /* position: fixed; */
+}
 
-section.blog-carousel .container {
+section.company-info .phone, section.company-info .address, section.company-info .email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    color: var(--color-primary);
+    font-size: 1.4rem;
+
+}
+section.company-info span a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+
+div#carouselExampleControls {
+ margin-top: 5rem;
+}
+/* =====================SERVICES SECTION========================== */
+section.services {
+    background: var(--color-light);
+   
+}
+
+section.services .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    animation: mymove 50s;
+}
+
+@keyframes mynove {
+    to {
+        transform: translateX(50px);
+        transition: var(--transition);
+    }
+}
+section.services .container .service {
+    background: var(--color-white);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    cursor: default;
+    transition: var(--transition);
+}
+section.services .container .service:hover {
+    box-shadow: 0 3rem 3rem var(--color-primary-light);
+    border-bottom: 0.7rem solid var(--color-primary);
+    color: var(--color-primary);
+}
+section.services .container .service span {
+    background: var(--color-primary);
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 4rem;
+}
+section.services .container .service:nth-child(2) span {
+    background: var(--color-warning);
+}
+section.services .container .service:nth-child(3) span {
+    background: var(--color-success);
+}
+/* section.consultation .container {
+    display: grid;
+   
+} */
+section.consultation .container .service, section.printing .container .service {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     gap: 3rem;
-    width: 100%;
+    text-align: center;
+}
+section.consultation .container .service p, section.printing .container .service p {
+    text-align: left;
 }
 
 /* <!-- ===========LANDING SECTION=========== --> */
@@ -293,15 +376,15 @@ section.about {
 }
 section.about .container {
     display: grid;
-    grid-template-columns: 26rem auto;
-    gap: 17rem;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
 }
 section.about .container img {
   height: 100%;
 }
 
 section.about p {
-    margin-bottom: 1rem;
+   text-align: left; 
 }
 section.about ul li {
     display: flex;
@@ -360,57 +443,6 @@ section.teams .team__list  {
 /* =====================DIRECTION SECTION========================== */
 section.google-map {
     background:var(--color-primary-light);
-}
-
-/* =====================SERVICES SECTION========================== */
-section.services {
-    background: var(--color-light);
-   
-}
-
-section.services .container {
-    display: grid;
-    grid-template-columns: repeat(1fr);
-    gap: 2rem;
-    animation: mymove 50s;
-}
-@keyframes mynove {
-    to {
-        transform: translateX(50px);
-        transition: var(--transition);
-    }
-}
-section.services .container .service {
-    background: var(--color-white);
-    padding: 3rem 2rem;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
-    cursor: default;
-    transition: var(--transition);
-}
-section.services .container .service:hover {
-    box-shadow: 0 3rem 3rem var(--color-primary-light);
-}
-section.services .container .service span {
-    background: var(--color-primary);
-    width: 4rem;
-    height: 4rem;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    color: var(--color-white);
-    font-size: 4rem;
-}
-section.services .container .service:nth-child(2) span {
-    background: var(--color-warning);
-}
-section.services .container .service:nth-child(3) span {
-    background: var(--color-success);
 }
 
 
@@ -627,9 +659,7 @@ section.skills .skill .items.show-items {
 }
 
 /* =====================FOOTER SECTION========================== */
-footer {
-    /* padding: 0rem; */
-}
+
 footer .container {
     display: flex;
     align-items: center;
@@ -790,6 +820,9 @@ footer .address {
     nav button#close-btn {
         display: none;
     }
+    section.company-info {
+        display: none;
+    }
 
     section.blog-carousel .container {
         display: grid;
@@ -872,6 +905,10 @@ footer .address {
     }
     section.services .container .service {
         flex-direction: column;
+    }
+    section.consultation .container .service, section.printing .container .service {
+        grid-template-columns: 1fr;
+       
     }
 
     /* TEAM-CEO SECTION  */
