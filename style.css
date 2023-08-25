@@ -161,6 +161,10 @@ nav .container ul li a:hover {
     color: var(--color-primary);
     text-decoration: underline;
 }
+/* hr {
+    height: 20px;
+    color: var(--color-primary);
+} */
 section.company-info {
     background-image: url(./asset/image/Background1.webp);
     height: 0.9rem;
@@ -188,7 +192,8 @@ div#carouselExampleControls {
 }
 /* =====================SERVICES SECTION========================== */
 section.services {
-    background: var(--color-light);
+    /* background: var(--color-light); */
+    background-image: url(./asset/image/bluebgrd.jpg);
    
 }
 
@@ -239,10 +244,12 @@ section.services .container .service:nth-child(2) span {
 section.services .container .service:nth-child(3) span {
     background: var(--color-success);
 }
-/* section.consultation .container {
-    display: grid;
-   
-} */
+section.consultation {
+    background-image: url(./asset/image/whitebackgrd.jpeg); 
+}
+section.printing {
+    background-image: url(./asset/image/whitebackgrd.jpeg); 
+}
 section.consultation .container .service, section.printing .container .service {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -659,7 +666,9 @@ section.skills .skill .items.show-items {
 }
 
 /* =====================FOOTER SECTION========================== */
-
+footer {
+    background: var(--color-dark);
+}
 footer .container {
     display: flex;
     align-items: center;
@@ -670,7 +679,7 @@ footer .container ul {
     gap: 3rem;
 }
 footer .container ul a {
-    color: var(--color-dark);
+    color: var(--color-white);
     transition: var(--transition);
     text-decoration: none;
     font-size: 1.5rem;
@@ -689,7 +698,7 @@ footer .container .socials ion-icon {
     font-size: 2rem;
 }
 footer .container .socials a {
-    color: var(--color-primary);
+    color: var(--color-white);
     padding: 0.3rem;
     border-radius: 50%;
     transition: var(--transition);
@@ -701,10 +710,11 @@ footer .container .socials a:hover {
 }
 footer .container img {
     width: 15rem;
+    color: var(--color-white);
 }
 footer .copyright {
     /* background: var(--color-primary); */
-    color: var(--color-primary);
+    color: var(--color-white);
     text-align: center;
     margin-top: 5rem;
     padding: 2rem 0;
@@ -712,7 +722,7 @@ footer .copyright {
 }
 footer .address {
     font-size: 1.2rem;
-    color: var(--color-primary);
+    color: var(--color-white);
 }
   
 /* Nav items Drop down */
@@ -906,6 +916,9 @@ footer .address {
     section.services .container .service {
         flex-direction: column;
     }
+    section.services .container .service p, section.services .container .service h3 {
+        text-align: left;
+    }
     section.consultation .container .service, section.printing .container .service {
         grid-template-columns: 1fr;
        
@@ -987,10 +1000,11 @@ footer .address {
    
     footer .container img {
         width: 15rem;
+        color: var(--color-white);
     }
     footer .copyright {
         /* background: var(--color-primary); */
-        color: var(--color-primary);
+        color: var(--color-white);
         text-align: center;
         margin-top: 5rem;
         padding: 2rem 0;
@@ -998,7 +1012,7 @@ footer .address {
     }
     footer .address {
         font-size: 0.65rem;
-        color: var(--color-primary);
+        color: var(--color-white);
     }
     
 }
