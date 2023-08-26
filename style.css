@@ -1102,5 +1102,14 @@ footer .address {
         font-size: 0.65rem;
         color: var(--color-white);
     }
+    /* Animation Effect on cards */
+
+.reveal{
+   display: none;
+  }
+  
+  .reveal.active{
+    display: none;
+  }
     
 }
