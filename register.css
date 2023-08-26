@@ -1,12 +1,11 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
 nav .container li a{
-    display: none;
+   display: none;
 }
 section.register {
-    background-image: url(./asset/image/Background.avif);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    background-image: url(./asset/image/registernow.jpg);
     padding: 0;
     max-width: 100vw;
     margin-top: 5.2rem;
@@ -47,6 +46,7 @@ section.register li a:hover {
         padding: 1rem;
    
     }
+
     nav .container li a{
         display: block;
         text-decoration: none;

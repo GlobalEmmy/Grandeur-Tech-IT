@@ -1071,6 +1071,7 @@ footer .address {
     }
     section.newsletter .container .newsletter__form form {
         display: flex;
+        gap: 1rem;
     }
     
     section.google-form {
