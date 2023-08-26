@@ -201,14 +201,6 @@ section.services .container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 2rem;
-    animation: mymove 50s;
-}
-
-@keyframes mynove {
-    to {
-        transform: translateX(50px);
-        transition: var(--transition);
-    }
 }
 section.services .container .service {
     background: var(--color-white);
@@ -1101,5 +1093,8 @@ footer .address {
     footer .address {
         font-size: 0.65rem;
         color: var(--color-white);
+    }
+    nav .container .lets-talk {
+        display: none;
     }
 }
