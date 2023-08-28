@@ -1,7 +1,61 @@
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    /* font-family: 'Poppins', sans-serif; */
+}
 nav .container li a{
           display: none;
-
       }
+
+      /* TEAM SECTION */
+      section.teams {
+        margin-top: 2rem;
+      }
+
+section.teams .team__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1.6rem;
+    margin-top: 1rem;
+}
+
+section.teams .team__list .team {
+    /* background: var(--color-light); */
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* section.teams .team__list .team:hover {
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+} */
+.team__list .team .socials a ion-icon {
+    font-size: 1.2rem;
+    margin:  0 0.4rem;
+    color: var(--color-primary);
+}
+section.teams .team__list .team img {
+    border-radius: 5rem;
+   
+}
+section.teams .team__list  {
+    text-align: center;
+}
+section.teams .team__list .team p {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    /* padding: 1rem; */
+}
+section.teams .team__list .team .text {
+    margin: 0rem 4rem;
+    /* border: 1px solid black; */
+}
       @media  screen and (max-width: 600px) {
       
           nav .container li a{
@@ -10,5 +64,18 @@ nav .container li a{
               color: var(--color-primary);
               font-size: 1.5rem;
           }
+          section.teams .team__list {
+            grid-template-columns: 1fr;
+           
+        }
+        section.teams .team__list .team img {
+            border-radius: 4rem;
+        }
+        section.teams .team__list .team .text {
+            margin: 0;
+        }
+        footer {
+            background: var(--color-light);
+        }
 }
       

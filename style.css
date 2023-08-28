@@ -1,6 +1,9 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 
+/* Poppins */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap'); */
+
 /* CSS ROOT VARIABLE */
 :root {
     --color-white: #fff;
@@ -42,6 +45,7 @@ html {
 }
 body {
     background: var(--color-white);
+    /* font-family: 'Poppins', sans-serif; */
     font-family: 'Montserrat', sans-serif;
     color: var(--color-dark);
     max-width: 100vw;
@@ -84,7 +88,7 @@ section {
 section h1, p {
     text-align: center;
     display: block;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 img { 
     width: 100%;
@@ -108,7 +112,7 @@ img {
 
 /* NAVBAR STYLES */
 nav {
-    /* background: var(--color-white); */
+ 
     background-image: url(./asset/image/Background1.webp);
     width: 100%;
     height: 5rem;
@@ -161,18 +165,13 @@ nav .container ul li a:hover {
     color: var(--color-primary);
     text-decoration: underline;
 }
-/* hr {
-    height: 20px;
-    color: var(--color-primary);
-} */
+
 section.company-info {
     background-image: url(./asset/image/Background1.webp);
     height: 0.9rem;
- 
-    /* position: fixed; */
 }
 
-section.company-info .phone, section.company-info .address, section.company-info .email {
+/* section.company-info .phone, section.company-info .address, section.company-info .email {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -184,7 +183,7 @@ section.company-info .phone, section.company-info .address, section.company-info
 section.company-info span a {
     text-decoration: none;
     color: var(--color-primary);
-}
+} */
 
 
 div#carouselExampleControls {
@@ -192,14 +191,12 @@ div#carouselExampleControls {
 }
 /* =====================SERVICES SECTION========================== */
 section.services {
-    /* background: var(--color-light); */
-    background-image: url(./asset/image/bluebgrd.jpg);
-   
+    background-image: url(./asset/image/bluebgrd.jpg); 
 }
 
 section.services .container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 1fr;
     gap: 2rem;
 }
 section.services .container .service {
@@ -207,11 +204,14 @@ section.services .container .service {
     padding: 3rem 2rem;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     gap: 2rem;
     cursor: default;
     transition: var(--transition);
+}
+section.services .container .service p {
+    text-align: left;
 }
 section.services .container .service:hover {
     box-shadow: 0 3rem 3rem var(--color-primary-light);
@@ -413,36 +413,8 @@ section.about .container .read-more:hover {
     text-decoration: underline
 }
 
-/* TEAM SECTION */
 
-section.teams .team__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    padding: 1.6rem;
-    margin-top: 3rem;
-}
-section.teams .team__list .team {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-.team__list .team .socials a ion-icon {
-    font-size: 1.5rem;
-    margin:  0 0.4rem;
-}
-section.teams .team__list .team .Jerry {
-    aspect-ratio: 1/1;
-}
-section.teams .team__list  {
-    text-align: center;
-}
 /* =====================DIRECTION SECTION========================== */
-section.google-map {
-    background:var(--color-primary-light);
-}
 
 
 /* =====================TESTIMONIAL SECTION========================== */
@@ -503,10 +475,10 @@ section.contact .overlay {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
-    padding: 10rem 0 7rem;
+    padding: 1rem 0 2rem;
 }
 section.contact .container {
-    width: 40%;
+    width: 50%;
 }
 section.contact .container h1 {
     margin: 0;
@@ -530,11 +502,11 @@ section.contact form input, section.contact form textarea {
     border: 1px solid var(--color-white);
     background: transparent;
     transition: var(--transition);
-    /* color: var(--color-white); */
+    color: var(--color-white);
 }
 section.contact form input:focus, section.contact form textarea:focus {
-    background: var(--color-white);
-    color: var(--color-black);
+    /* background: var(--color-white); */
+    color: var(--color-white);
     /* box-shadow: 0 3rem 3rem var(--color-white); */
 }
 
@@ -553,6 +525,16 @@ section.contact form .btn:hover {
     color: var(--color-white);
     cursor: pointer;
 }
+
+.Contact-Map {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+section.google-map {
+    height: 50vh;
+    /* background:var(--color-primary-light); */
+}
+
 /* =====================SKILLS SECTION========================== */
 section.skills .container {
     width: 50%;
@@ -1046,6 +1028,9 @@ footer .address {
     section.contact .container p {
         width: 80vw;
         margin: 0.5rem auto 0;
+    }
+    .Contact-Map {
+        grid-template-columns: 1fr;
     }
     /* FOOTER SECTION */
     footer .container {
