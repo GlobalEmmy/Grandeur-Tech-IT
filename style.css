@@ -230,17 +230,18 @@ section.services .container .service span {
     color: var(--color-white);
     font-size: 4rem;
 }
-section.services .container .service:nth-child(2) span {
+/* section.services .container .service:nth-child(2) span {
     background: var(--color-warning);
 }
 section.services .container .service:nth-child(3) span {
     background: var(--color-success);
-}
+} */
 section.consultation {
     background-image: url(./asset/image/whitebackgrd.jpeg); 
 }
 section.printing {
-    background-image: url(./asset/image/whitebackgrd.jpeg); 
+    background: var(--color-white);
+    /* background-image: url(./asset/image/whitebackgrd.jpeg);  */
 }
 section.consultation .container .service, section.printing .container .service {
     display: grid;
@@ -250,123 +251,6 @@ section.consultation .container .service, section.printing .container .service {
 }
 section.consultation .container .service p, section.printing .container .service p {
     text-align: left;
-}
-
-/* <!-- ===========LANDING SECTION=========== --> */
-
-section.CEO {
-    background-image: url(./asset/image/CEO-background.jpg);
-    display: grid;
-    place-items: center;
-    position: relative;
-    top: 5rem;
-    padding-bottom: 5rem;
-}
-section.CEO .container {
-    display: flex;
-    justify-content: space-between;
-}
-
-section.CEO .container .CEO__info {
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-  
-}
-section.CEO .socials {
-    display: flex;
-    gap: 1.6rem;
-  
-} 
-
-section.CEO .socials a {
-    font-size: 1.1rem;
-    background: var(--color-light);
-    color: var(--color-dark);
-    padding: 0.3rem;
-    border-radius: 50%;
-    height: 2rem;
-    width: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: var(--transition);
-
-}
-section.CEO .socials a:hover {
-    background: var(--color-primary);
-    color: var(--color-white);
-}
-section.CEO .info h1 {
-    margin: 1rem;
-   
-}
-section.CEO .info p {
-    width: 35rem;
-    
-}
-section.CEO .profile-area {
-    width: 40rem;
-    height: 40rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid black; */
-}
-section.CEO .profile-area .outer-circle {
-    width: 30rem;
-    height: 30rem;
-    border: 1px solid var(--color-primary);
-    border-radius: 50%;
-    position: relative;
-    animation: move 30s linear infinite;
-}
-
-@keyframes move {
-    to {
-        transform: rotate(360deg);
-    }
-
-}
-section.CEO .profile-area .outer-circle span {
-    display: block;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    position: absolute;
-    background: var(--color-white);
-    color: var(--color-primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 1rem var(--color-primary);
-
-}
-section.CEO .profile-area .outer-circle span:nth-child(1) {
-    left: calc(50% - 2rem);
-    top: -2rem;
-}
-section.CEO .profile-area .outer-circle span:nth-child(2) {
-    right: -2rem;
-    top: calc(50% - 2rem);
-}
-section.CEO .profile-area .outer-circle span:nth-child(3) {
-   left: -2rem;
-   top: calc(50% - 2rem);
-}
-section.CEO .profile-area .outer-circle span:nth-child(4) {
-    bottom: -2rem;
-    left: calc(50% - 2rem);
-}
-section.CEO .profile-area .inner-circle {
-    position: absolute;
-    width: 26rem;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    overflow: hidden;
 }
 
 /* =====================ABOUT SECTION========================== */
@@ -893,57 +777,7 @@ footer .address {
         grid-template-columns: 1fr
       
     }
-    section.blog-carousel .container .blog {
-        height: 30rem;
-    }
-    section.CEO .container .socials {
-        margin: 1rem;
-    }
-    section.CEO .container .info {
-        width: 90%;
-        margin: 0 auto;
-    }
-    section.CEO .container .info h1 {
-        text-align: center;
-    }
-    section.CEO .container .info p {
-        margin: 0 auto;
-        width: 92%;
-    }
-    section.CEO .container .profile-area {
-        grid-row: 1;
-        width: 94%;
-        margin: 0 auto;
-    }
-    section.CEO .container .outer-circle {
-        width: 16rem;
-        height: 16rem;
-    }
-    section.CEO .container .inner-circle {
-        width: 10rem;
-        height: 10rem;
-    }
-    section.CEO .container .outer-circle span {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-    section.CEO .profile-area .outer-circle span:nth-child(1) {
-        left: calc(50% - 1.5rem);
-        top: -1.5rem;
-    }
-    section.CEO .profile-area .outer-circle span:nth-child(2) {
-        right: -1.5rem;
-        top: calc(50% - 1.5rem);
-    }
-    section.CEO .profile-area .outer-circle span:nth-child(3) {
-       left: -1.5rem;
-       top: calc(50% - 1.5rem);
-    }
-    section.CEO .profile-area .outer-circle span:nth-child(4) {
-        bottom: -1.5rem;
-        left: calc(50% - 1.5rem);
-    }
-
+    
     /* ABOUT SECTION */
     section.about .container {
         grid-template-columns: 1fr;
